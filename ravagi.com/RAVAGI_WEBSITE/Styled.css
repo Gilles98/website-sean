@@ -222,9 +222,9 @@ div.artist_images {
 }
 
 #socials{
-    height: 633px;
+    height: 25em;
     width: 100%;
     position: relative;
     background-color:#ed1d24;
-    font-size: 33px;
+    font-size: 22px;
 }
