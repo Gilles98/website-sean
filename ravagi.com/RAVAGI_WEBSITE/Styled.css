@@ -234,8 +234,8 @@ div.artist_images {
 
 #social-one{
     background-image: url(images/SocialsWebsiteFacebook.png);
-    height: 160px;
-    width: 160px;
+    height: 8em;
+    width: 8em;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -246,8 +246,8 @@ div.artist_images {
 }
 #social-two{    
     background-image: url(images/SocialsWebsiteTwitter.png);
-    height: 160px;
-    width: 160px;
+    height: 8em;
+    width: 8em;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -259,8 +259,8 @@ div.artist_images {
 
 #social-three{
        background-image: url(images/SocialsWebsiteYouTube.png);
-    height: 160px;
-    width: 160px;
+    height: 8em;
+    width: 8em;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -272,8 +272,8 @@ div.artist_images {
 
 #social-four{
     background-image: url(images/SocialsWebsiteInstagram.png);
- height: 160px;
- width: 160px;
+ height: 8em;
+ width: 8em;
  background-size: cover;
  background-repeat: no-repeat;
  position: absolute;
@@ -283,6 +283,15 @@ div.artist_images {
  margin-left: 77%; 
 }
 
+.quote{
+    background-image: url(images/FutureOfHardstyle.png);
+    background-size: 40%;
+    height: 100px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: #121212;
+    background-position: center;
+}
 .lg:hover{
     filter: invert(100%);
 }
