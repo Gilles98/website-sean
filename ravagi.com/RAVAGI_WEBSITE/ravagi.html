@@ -36,11 +36,18 @@
 	</div>
 	
 																			<div id="socials">
-																			<t>TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST </t>
+																			
+																			<a href="https://www.facebook.com/RavagiArtistExample/" id="social-one" class="lg"></a>
+																			<a href="https://twitter.com/RAVAGI4" id="social-two" class="lg"></a>
+																			<a href="https://www.youtube.com/channel/UCI8vm6IkQkILNH5ftbOVsXw" id="social-three" class="lg"></a>
+																			<a href="https://www.instagram.com/ravagiartistexample/?hl=nl" id="social-four" class="lg"></a>
+																			</div>
 																			</div>
 																			
 																			
-	
+	<div id="video">
+		<iframe width="956" height="538" src="https://www.youtube.com/embed/r7WaWvJY1Rs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
 	<!-- TOURDATES -->
 	<div id="tourdates">
 		<!-- <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="coone" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="auto" data-text-color="#000000" data-link-color="#FF0000" data-background-color="rgba(0,0,0,0)" data-display-limit="5" data-display-start-time="false" data-link-text-color="#ffffff" data-display-lineup="false" data-display-play-my-city="true" data-separator-color="rgba(255, 255, 255, 0.5)"></a> -->
@@ -142,22 +149,20 @@
 		</div>
 	</div>
 	
-<script>
-	var vorigePositie = window.pageYOOffset;
-	window.onscroll = function() {
-		var huidigeScrollPos = window.pageYoffset;
-		if (vorigePositie > huidigeScrollPos) {
-			document.getElementsByClassName("nav").style.top="0";
-		} else {
-			document.getElementsByClassName("nav").style.top ="-50px"
-		}
-		vorigePositie = huidigeScrollPos;
-		}
-</script>
+
 <script src="jquery-3.4.1.min.js"></script>
 <script>
 
 	$(function(){
+
+		$('.nav a').click(function(e) {
+      	e.preventDefault();
+      		var $scrooll_to_id = $(this.getAttribute('href'));
+      		$('html').stop(true).animate({
+        	scrollTop: ($scrooll_to_id.position().top - $('.nav').height())
+      });
+  })
+
 		var arrAfb = ["imageslider/Slide1_2.png", "imageslider/Slide2_2.png" , "imageslider/Slide3_3.png",];
 		for (let i = 0; i <= arrAfb.length +1; i++) {
 			

@@ -100,10 +100,13 @@ nav ul {
 
 }
 
-
+#video{
+    text-align: center;
+    padding: 10%;
+}
 #tourdates {
     height: 970px;
-    background: #FFFF00;
+    background: black;
     display: block;
     width: 100%;
     font-family: 'Pathway Gothic One', sans-serif;
@@ -222,9 +225,64 @@ div.artist_images {
 }
 
 #socials{
-    height: 25em;
+    height: 15em;
     width: 100%;
     position: relative;
     background-color:#ed1d24;
     font-size: 22px;
+}
+
+#social-one{
+    background-image: url(images/SocialsWebsiteFacebook.png);
+    height: 160px;
+    width: 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 6.5%;
+    margin-left: 8%;
+}
+#social-two{    
+    background-image: url(images/SocialsWebsiteTwitter.png);
+    height: 160px;
+    width: 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 6.5%;
+    margin-left: 31%;
+}
+
+#social-three{
+       background-image: url(images/SocialsWebsiteYouTube.png);
+    height: 160px;
+    width: 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 6.5%;
+    margin-left: 54%; 
+}
+
+#social-four{
+    background-image: url(images/SocialsWebsiteInstagram.png);
+ height: 160px;
+ width: 160px;
+ background-size: cover;
+ background-repeat: no-repeat;
+ position: absolute;
+ display: inline-block;
+ border-radius: 50%;
+ margin-top: 6.5%;
+ margin-left: 77%; 
+}
+
+.lg:hover{
+    filter: invert(100%);
 }
