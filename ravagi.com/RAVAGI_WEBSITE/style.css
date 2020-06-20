@@ -1,0 +1,308 @@
+html {
+	scroll-behavior:smooth;
+}
+
+/* - - - NAVBAR - - - */
+
+body {
+	margin:0px;
+	padding:0px;
+	font-family: 'Bebas Neue', cursive;
+	height: 100px;
+	box-sizing: border-box;
+	background-color:pink;
+}
+
+div.logo a{
+	width:200px;
+	height:100px;
+	position: relative;
+	background-repeat: no-repeat;
+	margin-left: -15px;
+	margin-right: 20px;
+	z-index:1;
+	background-image: url(images/logo200pxh2.png);
+} 
+
+.nav{
+	float:right;
+	width:100%;
+	height: 100px;
+	line-height: 60px;
+	color: green;
+	background-color:#000000;
+	position:fixed;
+	z-index: 9999;
+}
+
+nav {
+	top:-50px;
+	display: flex;
+	transition: top 0.3s;
+}
+
+ul{
+	padding:0px;
+	margin:0px;
+	list-style: none;
+	float: center;
+	position: fixed;
+	top:25px;
+	width: 100%;
+	
+}
+
+li {
+	display:inline-block;
+	text-align: center;
+}
+
+a{
+	padding:0px;
+	padding-top:0px;
+	width:75px;
+	display:block;
+	line-height: 0px;
+}
+
+nav a {
+	color:#ce1218;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 550;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-right:30px;
+	padding-bottom:13%;
+}
+
+nav a:hover{
+	color:#C7C7C7;
+	transition-duration: 0.0s;
+}
+nav ul{
+	text-align: right;
+}
+
+
+@media screen and (max-width:700px) {
+	.nav
+	{
+		flex-direction: column;
+	}
+}
+
+/* SECTIONS      */
+
+/*01 HOME*/
+
+#home{
+	padding-top: 0px;
+	height:0px;
+	background:#E82A4C;
+	display:flex;
+	width:100%;
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+/* 01 HOME - IMAGESLIDER */
+slider {
+	display:block;
+	width:100%;
+	height:100%;
+	background-color:#1f1f1f;
+	overflow:hidden;
+	position:absolute;
+}
+slider > * {
+	position:absolute;
+	display:block;
+	width:100%;
+	height:100%;
+	background:#1f1f1f;
+	animation: slide 12s infinite;
+	overflow: hidden;
+}
+
+slide:nth-child(1) {
+	left:0%;
+	animation-delay:3s;
+	background-image:url(imageslider/Slide1_2.png);
+	background-size:cover;
+	background-position:center;
+}
+slide:nth-child(2) {
+	animation-delay:3s;
+	background-image:url(imageslider/Slide2_2.png);
+	background-size:cover;
+	background-position:center;
+}
+slide:nth-child(3) {
+	animation-delay:3s;
+	background-image:url(imageslider/Slide3_3.png);
+	background-size:cover;
+	background-position:center;
+}
+@keyframes slide {
+	0% { left: 100%; width: 100%;}
+	
+	33% { left: 100%;}
+	
+	66.0001% { left: 100%; width:100%;}
+	
+	100% { left: 100%; width: 100%;}
+}
+
+																socials {
+																	height:500px;
+																	background:darkgreen;
+																	display:block;
+																	width:100%;
+																}
+
+																youtube {
+<iframe width="1180" height="650" src="https://www.youtube.com/embed/r7WaWvJY1Rs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></frame>
+																	
+																	}
+#tourdates{
+	height:970px;
+	background:#FFFF00;
+	display:block;
+	width:100%;
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+/* MUSIC   MUSIC  MUSIC*/
+.singlesreleases {
+	font-size:24px;
+}
+
+#roster{
+	height:600px;
+	background:#E82A4C;
+	display:flex;
+	width:100%;
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+#artist_content {
+margin:2 auto;
+}
+#artist_content a {
+width:100%;
+height:100%;
+align-content:center;
+margin:22px;
+padding-top:0px;
+padding-bottom: 0px;
+border:0px solid transparent;
+display:inline-block;
+-webkit-border-radius:10px;
+-webkit-transition:all.1s ease-in;
+-moz-transition:all.1s ease-in;
+-0-transition:all.1s ease-in;
+transition:all.1s ease-in;
+}
+#artist_content a :hover {
+color:#333333;
+opacity:0.5;
+}
+div.artist_content {
+text-align:center;
+padding:10px;
+padding-top:1px;;
+}
+div.artist_images {
+margin:left;
+}
+.withfadeout {
+-webkit-transition: all 0,1s ease-in-out;
+-moz-transition: all 0,1s ease-in-out;
+-ms-transition: all 0,1s ease-in-out;
+-o-transition: all 0,1s ease-in-out;
+transition: all 0,1s ease-in-out;
+}
+.withfadeout:hover {
+-webkit-opacity:0.65;
+-moz-opacity:0.65;
+-opacity:0.65;
+-zoom
+}
+.container2 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.artistinfo {
+	position: absolute;
+	color:green;
+	font-size:10px;
+	bottom: 8px;
+	left: 16px;
+}
+
+.musicinfo {
+	position: absolute;
+	color:blue;
+	font-size:14px;
+	bottom: 16px;
+	left: 16px;
+}
+
+
+
+
+
+
+
+#contact{
+	height:520px;
+	background:#a00000;
+	display:flex;
+	width:100%;
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+
+
+
+/* FOOTER*/
+#footer{
+	height:350px;
+	background:#0D0D0D;
+}
+
+#logo-big{
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+  	width: 50%;
+}
+
+@media screen and (max-width:960px) {
+	.nav{
+	float:left;
+	width:100%;
+	height: 44px;
+	line-height: 60px;
+	color: green;
+	background-color:#1d1d1f;
+	position:fixed;
+}
+
+
+}
+/* CSS Document */
