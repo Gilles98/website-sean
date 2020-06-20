@@ -9,6 +9,7 @@
 	<link href="style.css" type="text/css" rel="stylesheet">
 	<link href="bootstrap.min.css" type="text/css" rel="stylesheet">
 	<link rel="shortcut icon" href="images/favicon.png"/>
+
 </head>
 
 <body>
@@ -22,9 +23,9 @@
 	window.onscroll = function() {
 		var huidigeScrollPos = window.pageYoffset;
 		if (vorigePositie > huidigeScrollPos) {
-			document.getElementById("nav").style.top="0";
+			document.getElementsByClassName("nav").style.top="0";
 		} else {
-			document.getElementById("nav").style.top ="-50px"
+			document.getElementsByClassName("nav").style.top ="-50px"
 		}
 		vorigePositie = huidigeScrollPos;
 		}
@@ -42,24 +43,14 @@
 		<!-- SECTIONS SECTIONS SECTIONS SECTIONS -->
 
 	<div id="home">
-		<slider>
-			<slide><p> </p></slide>
-			<slide><p> </p></slide>
-			<slide><p> </p></slide>
-		</slider>
+		<img id="img" src="imageslider/Slide1_2.png" alt="" width="100%" height="100%">
 	</div>
 	
 																			<div class="socials">
 																			<t>TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST </t>
 																			</div>
 																			
-																			<div class="youtube">
-																				<p style="text-align:center;">
-																				<iframe width="1180" height="650" align="middle"
-																				src="https://www.youtube.com/embed/watch?v=r7WaWvJY1Rscontrols=0"  allowFullScreen>
-																				</iframe>
-																				</p>
-																			</div>
+																			
 	
 	<!-- TOURDATES -->
 	<div id="tourdates">
@@ -83,7 +74,7 @@
         
     <div class="container2">
         <div id="artist_content" class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        	<a href="artists2/autix.html"><img src="roster/Music_21_02_2020_roster.jpg"></a>
+        	<a href="artists2/autix.html"><img class="redJeroen" src="roster/Music_21_02_2020_roster.jpg"></a>
         		<div class="overlay">
 					<div class="artistinfo"><t>RAVAGI</t></div>
         			<div class="musicinfo"><t>Truth Or Dare</t></div>
@@ -147,24 +138,38 @@
         </div>
         
 	</div>
-	</div>
-	
-	
-	
-	
+
 	
 	
 	<!-- CONTACT -->
 	<div id="contact">
 	</div>
 	
-
+	
 	
 	<div id="footer">
 		<div id="logo-big">
 		<img src="images/artist-footer.png">
 		</div>
 	</div>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
 
+	$(function(){
+		var arrAfb = ["imageslider/Slide1_2.png", "imageslider/Slide2_2.png" , "imageslider/Slide3_3.png",];
+		for (let i = 0; i <= arrAfb.length +1; i++) {
+			
+			setTimeout(function()
+        {
+
+				$("#home img").attr("src", arrAfb[i]);
+			
+        }, 2000* i);
+		
+	}
+		
+			
+	})
+</script>
 </body>
 </html>
