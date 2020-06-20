@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    
 }
 
 html {
@@ -8,15 +9,17 @@ html {
 }
 
 body {
+    
     margin: 0px;
     padding: 0px;
-    font-family: 'Bebas Neue', cursive;
+    
     height: 100px;
     box-sizing: border-box;
     background-color: pink;
 }
 
-div.logo a {
+
+div.logo a{
     width: 200px;
     height: 100px;
     position: relative;
@@ -217,3 +220,5 @@ div.artist_images {
     */
     background: blue;
 }
+
+#socials{
