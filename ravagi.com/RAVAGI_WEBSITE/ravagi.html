@@ -32,8 +32,9 @@
 		<!-- SECTIONS SECTIONS SECTIONS SECTIONS -->
 
 	<div id="home">
-		<img id="img" src="imageslider/Slide1_2.png" alt="" width="100%" height="100%">
+		<img name="slider" alt="" width="100%" height="100%">
 	</div>
+	
 	
 																			<div id="socials">
 																			
@@ -154,29 +155,38 @@
 	
 
 <script src="jquery-3.4.1.min.js"></script>
+
+
 <script>
+		var arrAfb = ["imageslider/Slide1_2.png", "imageslider/Slide2_2.png" , "imageslider/Slide3_3.png"];
+		var timer = 3000;
+		var i = 0;
+	
+	function slideImage(){
+		document.slider.src = arrAfb[i];
+		if (i < arrAfb.length - 1) {
+			i++;
+		}
+		else{
+			i = 0;
+		}
+
+		setTimeout("slideImage()",timer);
+	}
+	$(window).on("load", slideImage());
 
 	$(function(){
 
 		$('.nav a').click(function(e) {
       	e.preventDefault();
-      		var $scrooll_to_id = $(this.getAttribute('href'));
+      		var scroller= $(this.getAttribute('href'));
       		$('html').stop(true).animate({
-        	scrollTop: ($scrooll_to_id.position().top - $('.nav').height())
+        	scrollTop: (scroller.position().top - $('.nav').height())
       });
   })
 
-		var arrAfb = ["imageslider/Slide1_2.png", "imageslider/Slide2_2.png" , "imageslider/Slide3_3.png",];
-		for (let i = 0; i <= arrAfb.length +1; i++) {
-			
-			setTimeout(function()
-        {
-
-				$("#home img").attr("src", arrAfb[i]);
-			
-        }, 2000* i);
 		
-	}
+	
 			
 	})
 </script>
