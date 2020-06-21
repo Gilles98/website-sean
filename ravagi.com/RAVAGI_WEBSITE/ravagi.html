@@ -165,9 +165,10 @@
 		$(window).on("load", slideImage());
 		function slideImage(){
 		var timer = 3000;
+		$("#slider").attr("src",arrAfb[i]);
 		setTimeout("slideImage()",timer);
 		
-		$("#slider").fadeIn(500).attr("src",arrAfb[i]);
+		
 			if (i < arrAfb.length -1) {
 			i++;
 		}
