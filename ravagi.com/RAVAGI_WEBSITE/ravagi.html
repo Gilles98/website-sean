@@ -33,7 +33,7 @@
 		<!-- SECTIONS SECTIONS SECTIONS SECTIONS -->
 
 	<div id="home">
-		<img name="slider" alt="" width="100%" height="100%">
+		<img id="slider" alt="" width="100%" height="100%">
 	</div>
 	
 	
@@ -160,24 +160,25 @@
 
 <script>
 		var arrAfb = ["imageslider/Slide1_2.png", "imageslider/Slide2_2.png" , "imageslider/Slide3_3.png"];
-		var timer = 3000;
 		var i = 0;
-	
-	function slideImage(){
-		document.slider.src = arrAfb[i];
-		if (i < arrAfb.length - 1) {
+		
+		$(window).on("load", slideImage());
+		function slideImage(){
+		var timer = 3000;
+		setTimeout("slideImage()",timer);
+		
+		$("#slider").fadeIn(500).attr("src",arrAfb[i]);
+			if (i < arrAfb.length -1) {
 			i++;
 		}
 		else{
 			i = 0;
-		}
-
-		setTimeout("slideImage()",timer);
+		};
+		
 	}
-	$(window).on("load", slideImage());
-
+	
 	$(function(){
-
+		
 		$('.nav a').click(function(e) {
       	e.preventDefault();
       		var scroller= $(this.getAttribute('href'));
