@@ -164,8 +164,22 @@
 
 	<script src="jquery-3.4.1.min.js" type="text/javascript"></script>
 	<script src="slick/slick.min.js" type="text/javascript"></script>
+	
+	<script>
+		var mql = matchMedia("screen and (max-device-width:750px");
+		mql.addListener(function(e){
+			if (e.matches) {
+				console.log("mobile");
+
+			}
+			else{
+				console.log("no mobile");
+			}
+		})
+	</script>
+	<!--slick script-->
 	<script> 	
-	$(document).ready(function(){
+		$(document).ready(function(){
 		$(".ding").slick({
 		arrows: false,
 		infinite: true,
@@ -173,7 +187,10 @@
 		autoplay: true,
 		autoplaySpeed: 3000
       });
-	})</script>
+	})
+	
+</script>
+
 <script>
 
 	$(function(){
