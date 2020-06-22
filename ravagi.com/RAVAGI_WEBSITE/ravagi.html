@@ -13,7 +13,19 @@
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
 	<link href="bootstrap.min.css" type="text/css" rel="stylesheet">
 	<link rel="shortcut icon" href="images/favicon.png"/>
-
+	
+<script>
+	var vorigePositie = window.pageYOOffset;
+	window.onscroll = function() {
+		var huidigeScrollPos = window.pageYoffset;
+		if (vorigePositie > huidigeScrollPos) {
+			document.getElementById("nav").style.top="0";
+		} else {
+			document.getElementById("nav").style.top ="-50px"
+		}
+		vorigePositie = huidigeScrollPos;
+		}
+</script>
 </head>
 
 <body>
@@ -176,6 +188,8 @@
 				console.log("no mobile");
 			}
 		})
+
+		
 	</script>
 	<!--slick script-->
 	<script> 	
