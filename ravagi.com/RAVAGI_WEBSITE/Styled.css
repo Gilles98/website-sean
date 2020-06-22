@@ -94,15 +94,16 @@ nav ul {
     text-align: right;
 }
 
-#home {
-    padding-top: 0px;
-    background: #E82A4C;
-    display: flex;
+#wrapper{
     width: 100%;
-    font-family: 'Pathway Gothic One', sans-serif;
+    margin: 0 auto;
+    overflow: hidden;
 
 }
+#wrapper img{
+    width: 100%;
 
+}
 #video{
     text-align: center;
     padding: 10%;
