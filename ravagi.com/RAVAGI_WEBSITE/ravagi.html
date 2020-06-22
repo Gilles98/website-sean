@@ -181,9 +181,15 @@
 	<script> 	
 		$(document).ready(function(){
 		$(".ding").slick({
+		pauseOnHover:false,
+		pauseOnFocus: false,
 		arrows: false,
+		draggable: false,
+		speed: 900,
+		swipe: false,
+		accesibility: false,
+        touchMove: false,
 		infinite: true,
-		speed: 800,
 		autoplay: true,
 		autoplaySpeed: 3000
       });
