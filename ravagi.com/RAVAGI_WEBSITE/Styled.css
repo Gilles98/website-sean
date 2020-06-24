@@ -33,6 +33,11 @@ div.logo a{
     background-image: url(images/logo200pxh2.png);
 }
 
+.logo a:hover{
+    filter: brightness(7.5);
+    transition: ease-in 0.25s;
+
+}
 .nav {
     float: right;
     width: 100%;
