@@ -1,0 +1,26 @@
+@media screen and (min-device-width :961px) and (max-device-width: 1600px){
+    nav a{
+        font-size: 1.3em;
+
+    }
+    nav ul li{
+        padding-right: 3%;
+
+    }
+    .align{
+        padding-left: 2.1%;
+        padding-right: 1.5%;
+    }
+    .nav{
+        height: 5em;
+        line-height: 1.7em;
+    }
+
+    div.logo{
+        width: 11em;
+        height: 5em;
+    }
+    div.logo a{
+        background-size: cover;
+    }
+}

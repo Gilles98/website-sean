@@ -89,7 +89,13 @@ nav a:hover {
     color: #C7C7C7;
     transition-duration: 0.0s;
 }
-
+nav a:visited{
+    color:#ce1218;
+}
+nav a:visited:hover {
+    color: #C7C7C7;
+    transition-duration: 0.0s;
+}
 nav ul {
     text-align: right;
 }
@@ -245,8 +251,8 @@ div.artist_images {
     position: absolute;
     display: inline-block;
     border-radius: 50%;
-    margin-top: 6.5%;
-    margin-left: 8%;
+    margin-top: 3.7em;
+    margin-left: 6em;
 }
 #social-two{    
     background-image: url(images/SocialsWebsiteTwitter.png);
@@ -257,8 +263,8 @@ div.artist_images {
     position: absolute;
     display: inline-block;
     border-radius: 50%;
-    margin-top: 6.5%;
-    margin-left: 31%;
+    margin-top: 3.7em;
+    margin-left: 22em;
 }
 
 #social-three{
@@ -270,8 +276,8 @@ div.artist_images {
     position: absolute;
     display: inline-block;
     border-radius: 50%;
-    margin-top: 6.5%;
-    margin-left: 54%; 
+    margin-top: 3.7em;
+    margin-left: 38em; 
 }
 
 #social-four{
@@ -283,8 +289,8 @@ div.artist_images {
  position: absolute;
  display: inline-block;
  border-radius: 50%;
- margin-top: 6.5%;
- margin-left: 77%; 
+ margin-top: 3.7em;
+ margin-left: 54em; 
 }
 
 .quote{
