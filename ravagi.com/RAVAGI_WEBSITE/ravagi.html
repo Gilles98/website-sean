@@ -5,62 +5,61 @@
 	<meta charset="utf-8">
 	<title>RAVAGI | | #FUTUREOFHARDSTYLE</title>
 	<meta name="description" content=".">
+	<meta name="author" content="Sean Borgmans">
+	<meta name="author" content="Gilles Gui">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<link href="style.css" type="text/css" rel="stylesheet">
+	<link href="Styled.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="responsive.css">
 	<link href="bootstrap.min.css" type="text/css" rel="stylesheet">
 	<link rel="shortcut icon" href="images/favicon.png"/>
+
 </head>
 
 <body>
 	<nav>
 		<div class="nav">
-		<div class="logo"><a href="#home"></a>
+		<div class="logo"><a href="#wrapper"></a>
 		</div>
 
-<script>
-	var vorigePositie = window.pageYOOffset;
-	window.onscroll = function() {
-		var huidigeScrollPos = window.pageYoffset;
-		if (vorigePositie > huidigeScrollPos) {
-			document.getElementById("nav").style.top="0";
-		} else {
-			document.getElementById("nav").style.top ="-50px"
-		}
-		vorigePositie = huidigeScrollPos;
-		}
-</script>
 
 			<ul>
-				<li><a href="#home"> HOME</a></li>
-				<li><a href="#tourdates"> TOURDATES</a></li>
-				<li><a href="#music"> MUSIC</a></li>
-				<li><a href="#contact"> CONTACT</a></li>
+				<li class="align"><a href="#wrapper">HOME</a></li>
+				<li><a href="#socials">SOCIALS</a></li>
+				<li class><a href="#tourdates">TOURDATES</a></li>
+				<li class="align"><a href="#music">MUSIC</a></li>
+				<li><a href="#contact">CONTACT</a></li>
 			</ul>
 		</div>
 	</nav>
 
 		<!-- SECTIONS SECTIONS SECTIONS SECTIONS -->
+		
 
-	<div id="home">
-		<slider>
-			<slide><p> </p></slide>
-			<slide><p> </p></slide>
-			<slide><p> </p></slide>
-		</slider>
+	<div id="wrapper" class="ding">
+		<div><img src="imageslider/Slide1_2.png" alt="slider image"></div>
+		<div><img src="imageslider/Slide2_2.png" alt="slider image"></div>
+		<div><img src="imageslider/Slide3_3.png" alt="slider image"></div>
 	</div>
 	
-																			<div class="socials">
-																			<t>TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST </t>
+	
+																			<div id="socials">
+																			
+																			<a href="https://www.facebook.com/RavagiArtistExample/" id="social-one" class="lg"></a>
+																			<a href="https://twitter.com/RAVAGI4" id="social-two" class="lg"></a>
+																			<a href="https://www.youtube.com/channel/UCI8vm6IkQkILNH5ftbOVsXw" id="social-three" class="lg"></a>
+																			<a href="https://www.instagram.com/ravagiartistexample/?hl=nl" id="social-four" class="lg"></a>
+																			</div>
 																			</div>
 																			
-																			<div class="youtube">
-																				<p style="text-align:center;">
-																				<iframe width="1180" height="650" align="middle"
-																				src="https://www.youtube.com/embed/watch?v=r7WaWvJY1Rscontrols=0"  allowFullScreen>
-																				</iframe>
-																				</p>
-																			</div>
-	
+																			
+	<div id="video">
+		<iframe width="956" height="538" src="https://www.youtube.com/embed/r7WaWvJY1Rs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+	<div class="quote">
+	</div>
 	<!-- TOURDATES -->
 	<div id="tourdates">
 		<!-- <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="coone" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="auto" data-text-color="#000000" data-link-color="#FF0000" data-background-color="rgba(0,0,0,0)" data-display-limit="5" data-display-start-time="false" data-link-text-color="#ffffff" data-display-lineup="false" data-display-play-my-city="true" data-separator-color="rgba(255, 255, 255, 0.5)"></a> -->
@@ -83,7 +82,7 @@
         
     <div class="container2">
         <div id="artist_content" class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        	<a href="artists2/autix.html"><img src="roster/Music_21_02_2020_roster.jpg"></a>
+        	<a href="artists2/autix.html"><img class="redJeroen" src="roster/Music_21_02_2020_roster.jpg"></a>
         		<div class="overlay">
 					<div class="artistinfo"><t>RAVAGI</t></div>
         			<div class="musicinfo"><t>Truth Or Dare</t></div>
@@ -147,24 +146,74 @@
         </div>
         
 	</div>
-	</div>
-	
-	
-	
-	
+
 	
 	
 	<!-- CONTACT -->
 	<div id="contact">
 	</div>
 	
-
+	
 	
 	<div id="footer">
 		<div id="logo-big">
 		<img src="images/artist-footer.png">
 		</div>
 	</div>
+	
 
+	<script src="jquery-3.4.1.min.js" type="text/javascript"></script>
+	<script src="slick/slick.min.js" type="text/javascript"></script>
+	
+	<script>
+		var mql = matchMedia("screen and (max-device-width:750px");
+		mql.addListener(function(e){
+			if (e.matches) {
+				console.log("mobile");
+
+			}
+			else{
+				console.log("no mobile");
+			}
+		})
+
+		
+	</script>
+	<!--slick script-->
+	<script> 	
+		$(document).ready(function(){
+		$(".ding").slick({
+		pauseOnHover:false,
+		pauseOnFocus: false,
+		arrows: false,
+		draggable: false,
+		speed: 900,
+		swipe: false,
+		accesibility: false,
+        touchMove: false,
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 3000
+      });
+	})
+	
+</script>
+
+<script>
+	$(function(){
+		
+		$('.nav a').click(function(e) {
+      	e.preventDefault();
+      		var scroller= $(this.getAttribute('href'));
+      		$('html').stop(true).animate({
+        	scrollTop: (scroller.position().top - $('.nav').height())
+      });
+  })
+
+		
+	
+			
+	})
+</script>
 </body>
 </html>
